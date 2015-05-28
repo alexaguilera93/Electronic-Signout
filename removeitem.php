@@ -22,7 +22,6 @@ if(!$con){
 die("MYSQL Connection Failed:" . $con->connect_error);
 }
 		$sql1 = "DELETE FROM items WHERE name = '$item';";
-		//echo $sql1;
 		if($con->query($sql1) === TRUE){
 			echo "Successfully Deleted";
 		}

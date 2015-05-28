@@ -17,7 +17,6 @@ read sysusername
 echo "Enter the password you want to use to log in to system:"
 read syspassword
 
-#echo $servername $databasename $username $password
 sed -i -- 's/pw123/'$password'/g' *
 sed -i -- 's/un123/'$username'/g' *
 sed -i -- 's/sn123/'$servername'/g' *

@@ -10,7 +10,6 @@ session_start();
 <table border="1"><tr><td><b><center>Item</center></b></td><td><b><center>With</center></b></td><td><b><center>NetID</center></b></td><td><b><center>Email</center></b></td><td><b><center>Sign Out Date</center></b></td></tr>
 </center>
 <?php
-//FORMAT: ITEM : StudentName : NETID : Email : Sign Out Date
 $dbname="db123";$servername = "sn123"; $username = "un123"; $password = "pw123";
 $con = mysqli_connect($servername, $username, $password, $dbname);
                 if(!$con){

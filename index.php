@@ -18,7 +18,6 @@ $dbname="db123";$servername = "sn123"; $username = "un123"; $password = "pw123";
         }
 
 	$sql = "SELECT username, password FROM employees WHERE username = '$husername';";
-	//echo $sql;
 	$results = $con->query($sql);
 	$row = mysqli_fetch_array($results);
 	if(mysqli_num_rows($results) == 0){
@@ -28,10 +27,6 @@ $dbname="db123";$servername = "sn123"; $username = "un123"; $password = "pw123";
 		$_SESSION["employee"] = $row['username'];
 		$_SESSION["valid"] = 1;
 		header('Location: home.php');
-		/* 
-		echo $_SESSION["employee"];
-		echo $_SESSION["valid"];
-		*/
 	}
 	else{
 		echo"incorrect password";
@@ -40,9 +35,6 @@ $dbname="db123";$servername = "sn123"; $username = "un123"; $password = "pw123";
 ?>
 <center>
 <h1> INVENTORY </h1>
-<?php
-//echo $_SESSION['valid'];
-?>
 <form method="post">
 <table>
 <tr><td>Username:</td>
