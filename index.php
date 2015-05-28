@@ -39,7 +39,7 @@ $dbname="db123";$servername = "sn123"; $username = "un123"; $password = "pw123";
 }
 ?>
 <center>
-<h1> HACKERSPACE SIGN OUT </h1>
+<h1> INVENTORY </h1>
 <?php
 //echo $_SESSION['valid'];
 ?>
